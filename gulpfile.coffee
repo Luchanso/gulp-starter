@@ -38,8 +38,8 @@ gulp.task 'stylus', ->
 		.pipe do connect.reload
 
 gulp.task 'watch', ->
-	gulp.watch 'build/coffee/*.coffee', ['coffee']
-	gulp.watch 'build/jade/*.jade', ['jade']
-	gulp.watch 'build/stylus/*.styl', ['stylus']
+	gulp.watch 'src/coffee/*.coffee', ['coffee']
+	gulp.watch 'src/jade/*.jade', ['jade']
+	gulp.watch 'src/stylus/*.styl', ['stylus']
 
 gulp.task 'default', ['coffee', 'jade', 'stylus', 'connect', 'watch']
